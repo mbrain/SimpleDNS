@@ -1,2 +1,2 @@
 # SimpleDNS
-Ein minimalistischer DNS Server mit Typ A Implementierung
+Ein minimalistischer DNS Server mit (derzeit nur) Typ A Implementierung
