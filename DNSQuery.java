@@ -43,7 +43,7 @@ private static Properties prop;
 			addrBytes[i] = (byte)temp;
 		} 
       
-    System.out.println("[INFO] Domain " + _domain + " aufgelöst zu " + domain);	
+    System.out.println("[INFO] Domain " + _domain + " aufgeloest zu " + domain);	
 		return addrBytes;
     
 	}
