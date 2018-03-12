@@ -85,7 +85,7 @@ public class DNSResponse {
      
   		// startet bei 12 Byte
   		int intPosition = 12;
-  		// Die Länge ist das erste nach dem 12. Byte
+  		// Die Laenge ist das erste nach dem 12. Byte
   		int length = (int)requestBytes[intPosition];
   		Vector<Byte> domainVector = new Vector<Byte>();
   		// in den Paketbuffer
@@ -106,7 +106,7 @@ public class DNSResponse {
     			intPosition++;
   		}
   
-  		// die nächsten 4 Bytes einfach kopieren, bei Fragen die Antwort und umgekehrt
+  		// die naechsten 4 Bytes einfach kopieren, bei Fragen die Antwort und umgekehrt
   		domainVector.addElement(requestBytes[intPosition + 0]);
   		domainVector.addElement(requestBytes[intPosition + 1]);
   		domainVector.addElement(requestBytes[intPosition + 2]);
@@ -144,7 +144,7 @@ public class DNSResponse {
   		answerBytes[8] = 0; // 00000000b
   		answerBytes[9] = (byte)151; // 10010111b
   
-  		// Länge
+  		// Laenge
   		answerBytes[10] = 0; // 00000000b
   		answerBytes[11] = 4; // 00000100b
   
@@ -167,4 +167,4 @@ public class DNSResponse {
       
   	}
   
-} 
+}
